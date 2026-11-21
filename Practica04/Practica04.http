@@ -1,0 +1,17 @@
+@Practica04_HostAddress = http://localhost:5099
+
+### Create an emergency incident
+POST {{Practica04_HostAddress}}/api/v1/emergency-incidents
+Content-Type: application/json
+Accept: application/json
+
+{
+  "guidCode": "5af2dbef-37d3-4cbb-b8b9-c3f22f1f051a",
+  "responseUnitId": "088b6ba0-d6f8-4bf2-b019-57516e0c81cf",
+  "reportedAt": "2026-11-21T10:00:00",
+  "slaDeadLine": "2026-11-21T10:30:00",
+  "dispatchOperationalCostValue": 150.00,
+  "dispatchOperationalCostCurrency": "PEN",
+  "status": 0,
+  "description": "Emergency response requested."
+}
